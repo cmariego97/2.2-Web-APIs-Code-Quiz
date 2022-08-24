@@ -1,0 +1,128 @@
+:root {
+    --botticelli: #d9e2ef;
+    --bossanova: #4d255c;
+    --blackcurrant: #3c2c44;
+    --bossa-shadow: 0px 6px 15px 0px rgb(77,37,92, 0.8);
+}
+
+/* typography elements */
+h1 {
+    font-size: 50px;
+    color: var(--bossanova);
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--bossanova);
+}
+
+p {
+    font-size: 22px;
+    color: var(--blackcurrant);
+}
+
+/* header elements */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 150px;
+    background: var(--botticelli);
+    box-shadow: var(--bossa-shadow);
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header-margin {
+    padding: 15px;
+}
+
+/* body theme and elements */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-family: monospace;
+}
+
+hr {
+    margin: 20px;
+    padding: 1px;
+    background: var(--bossanova);
+}
+
+
+/* main content */
+main {
+    position: relative;
+    height: 650px;
+    top: 200px;
+    background: var(--botticelli);
+    box-shadow: var(--bossa-shadow);
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+.main-margin {
+   padding: 25px; 
+}
+
+.container {
+    padding: 30px;
+    text-align: center;
+}
+
+.top-row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-row-1 button {
+    align-content: right;
+    background: var(--blackcurrant);
+    color: #fff;
+    height: 50px;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+#welcome .content button {
+    background: var(--blackcurrant);
+    color: #fff;
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/* --- hidden content --- */
+#quiz,
+#checkAns,
+#gameover,
+#highscores {
+    display: none;
+}
+
+#quiz ul {
+    list-style-type: none;
+    line-height: 2.5;
+    text-align: left;
+}
+
+#quiz ul button {
+    background: var(--blackcurrant);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/* Answer Button Styles */

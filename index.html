@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- local CSS stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- page title -->
+    <title> Web APIs Code Quiz </title>
+</head>
+
+<body>
+    <!-- containter for the header page -->
+    <header>
+        <div class="header-margin">
+                <!-- title to the top left -->
+                <h1> JavaScript Coding Quiz </h1>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <main>
+        <!-- container for the main content -->
+        <div class="container">
+            <div class="top-row-1">
+                <!-- timer to the top right -->
+                <p id="timer"> Time Left: 60s </p>
+                <!-- highscores to the top left -->
+                <button id="viewscores" type="button"> View Highscores </button>
+            </div>
+            <!-- welcome/intro section -->
+            <section id="welcome">
+                <div class="main-margin">
+                    <div class="content">
+                        <h2>
+                            Hello there! <br>
+                            Are you ready to take the JavaScript Coding Quiz?
+                        </h2>
+                        <P>
+                            You will have 60 seconds to answer as many questions as you can. <br>
+                            Incorrect answers will penalize you by reducing your score and time by 5 seconds!
+                        </P>
+                        <hr>
+                        <button id="start" type="button"> Start Quiz </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- quiz section || shown when start button is clicked -->
+            <section id="quiz">
+                <div class="main-margin">
+                    <div class="content">
+                        <h2 id="question"> Insert Question Here </h2>
+                        <ul id="choices">
+                            <li class="answer">
+                                <button class="answerButton" id="0" type="button"> Answer 1 </button>
+                            </li>
+                            <li class="answer">
+                                <button class="answerButton" id="1" type="button"> Answer 2 </button>
+                            </li>
+                            <li class="answer">
+                                <button class="answerButton" id="2" type="button"> Answer 3 </button>
+                            </li>
+                            <li class="answer">
+                                <button class="answerButton" id="3" type="button"> Answer 4 </button>
+                            </li>
+                        </ul>
+                        <hr>
+                        <!-- correct answer here -->
+                        <div id="checkAns"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- quiz end section + final score || hidden until end of the quiz -->
+            <section id="gameover">
+                <div class="main-margin">
+                    <div class="content">
+                        <h2> You've reached the end! </h2>
+                        <p> 
+                            Great job! Your final score is: 
+                            <div id="result"></div>
+                        </p>
+                        <div>
+                            <input id="initials" placeholder="Enter Your Initials" />
+                            <button id="submit"> Submit Score </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- highscores -->
+            <section id="highscores">
+                <div class="main-margin">
+                    <div class="content">
+                        <h2>Highscores!</h2>
+                        <!-- insert highscores here - descending list -->
+                        <ol id="scores">
+                            <!-- <li></li> of scores -->
+                        </ol>
+                        <hr>
+                        <button id="reset"> Play Again </button>
+                        <button id="clear"> Clear Scores </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- local javascript -->
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
